@@ -1,0 +1,19 @@
+  server:
+    port: 8080
+    error:
+      include-message: always
+  spring:
+    datasource:
+      url: jdbc:postgresql://localhost:5432/customer
+      username: postgres
+      password: 1729
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      show-sql: true
+    flyway:
+      baseline-on-migrate: true

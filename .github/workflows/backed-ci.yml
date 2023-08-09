@@ -1,0 +1,10 @@
+
+ name: CI-Build backend
+
+ on:
+   pull_request:
+     branches:
+       -  "main"
+     paths:
+       - backend/**
+
